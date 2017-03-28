@@ -1,0 +1,69 @@
+.dashboard-panel {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: bottom;
+  position: relative;
+
+  .indicator-area {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+
+    .top-docker {
+      position: absolute;
+      top: 0;
+      left: calc(50% - 20px);
+      width: 40px;
+      height: 20px;
+    }
+
+    .bottom-docker {
+      position: absolute;
+      bottom: 0;
+      left: calc(50% - 20px);
+      width: 40px;
+      height: 20px;
+    }
+
+    .left-docker {
+      position: absolute;
+      left: 0;
+      width: 20px;
+      height: 40px;
+      top: calc(50% - 20px);
+    }
+
+    .right-docker {
+      position: absolute;
+      right: 0;
+      width: 20px;
+      height: 40px;
+      top: calc(50% - 20px);
+    }
+  }
+
+  &.drop-active {
+    .indicator-area {
+      display: block;
+
+      .drop-indicator {
+        border: 2px solid black;
+        background: lightblue;
+
+        &.drop-target {
+          background: pink;
+        }
+      }
+    }
+  }
+
+  .docker-area {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+  }
+}

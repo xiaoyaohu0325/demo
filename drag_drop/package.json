@@ -1,0 +1,19 @@
+{
+  "name": "drag_drop",
+  "version": "1.0.0",
+  "description": "Compile Typescript: tsc Compile scss file: scss -t expanded -C DashboardPanel.scss ./build/DashboardPanel.css",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "interact.js": "^1.2.8"
+  },
+  "devDependencies": {
+    "@types/interact.js": "^1.0.22",
+    "ts-loader": "^2.0.3",
+    "webpack": "^2.3.2"
+  }
+}
